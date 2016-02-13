@@ -7,8 +7,8 @@
     <ProjectGuid>{C8BB6181-B847-4971-ACA2-9EDC0D21CABF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>common</RootNamespace>
-    <AssemblyName>common</AssemblyName>
+    <RootNamespace>deimors.strange.common</RootNamespace>
+    <AssemblyName>deimors.strange.common</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
