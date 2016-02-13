@@ -1,10 +1,10 @@
-﻿using deimors.objects.models;
-using deimors.objects.signals;
-using deimors.objects.views;
+﻿using deimors.strange.objects.models;
+using deimors.strange.objects.signals;
+using deimors.strange.objects.views;
 using strange.extensions.mediation.impl;
 using UnityEngine.Assertions;
 
-namespace deimors.objects.mediators {
+namespace deimors.strange.objects.mediators {
 	public class ObjectMediator : Mediator {
 		#region View injection
 		[Inject]

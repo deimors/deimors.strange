@@ -2,7 +2,7 @@
 
 using strange.extensions.mediation.impl;
 
-namespace deimors.objects.views {
+namespace deimors.strange.objects.views {
 	public class ObjectChildView : View {
 		public ObjectView ObjectParent { get; private set; }
 

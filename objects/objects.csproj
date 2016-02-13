@@ -7,8 +7,8 @@
     <ProjectGuid>{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>deimors.objects</RootNamespace>
-    <AssemblyName>deimors.objects</AssemblyName>
+    <RootNamespace>deimors.strange.objects</RootNamespace>
+    <AssemblyName>deimors.strange.objects</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>

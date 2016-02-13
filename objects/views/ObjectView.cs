@@ -1,7 +1,7 @@
 ﻿using strange.extensions.mediation.impl;
 using UnityEngine;
 
-namespace deimors.objects.views {
+namespace deimors.strange.objects.views {
 	public class ObjectView : View {
 		public int ObjectID = -1;
 

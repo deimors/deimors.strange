@@ -1,4 +1,4 @@
-﻿namespace deimors.objects.models.impl {
+﻿namespace deimors.strange.objects.models.impl {
 	public class ObjectIDModel : IObjectIDModel {
 		private int nextID = 0;
 
