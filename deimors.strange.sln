@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "common\common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "objects", "objects\objects.csproj", "{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "camera", "camera\camera.csproj", "{A4D8D465-3777-4A86-8AFD-80BFC2D32690}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

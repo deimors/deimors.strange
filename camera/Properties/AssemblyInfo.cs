@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("deimors.strange.common")]
+[assembly: AssemblyTitle("deimors.strange.camera")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("deimors")]
-[assembly: AssemblyProduct("common")]
+[assembly: AssemblyProduct("camera")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c8bb6181-b847-4971-aca2-9edc0d21cabf")]
+[assembly: Guid("a4d8d465-3777-4a86-8afd-80bfc2d32690")]
 
 // Version information for an assembly consists of the following four values:
 //
