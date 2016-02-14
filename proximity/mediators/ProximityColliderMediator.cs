@@ -9,10 +9,10 @@ namespace deimors.strange.proximity.mediators {
 		public ProximityCollider2DView View { get; set; }
 
 		[Inject]
-		public ProximityEnterSignal proximityEnterSignal { get; set; }
+		public AddToProximitySignal proximityEnterSignal { get; set; }
 
 		[Inject]
-		public ProximityExitSignal proximityExitSignal { get; set; }
+		public RemoveFromProximitySignal proximityExitSignal { get; set; }
 		#endregion
 
 		#region Mediator implementation

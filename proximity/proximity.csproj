@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,18 +25,43 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="StrangeIoC">
+      <HintPath>..\..\..\..\..\deimors\Documents\Unity Packages\strangeioc\StrangeIoC\scripts\strange\bin\Debug\StrangeIoC.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="commands\AddToProximityCommand.cs" />
+    <Compile Include="commands\RemoveFromProximityCommand.cs" />
+    <Compile Include="mediators\ProximityColliderMediator.cs" />
+    <Compile Include="models\impl\ObjectProximityModel.cs" />
+    <Compile Include="models\IObjectProximityModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProximityContext.cs" />
+    <Compile Include="ProximityLoadableContextView.cs" />
+    <Compile Include="Signals.cs" />
+    <Compile Include="views\ProximityCollider2DView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{c8bb6181-b847-4971-aca2-9edc0d21cabf}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\objects\objects.csproj">
+      <Project>{a650d675-c6bf-4847-9ff9-d1bd4dc5aafa}</Project>
+      <Name>objects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
