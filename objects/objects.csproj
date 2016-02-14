@@ -42,13 +42,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="commands\InitializeObjectCommand.cs" />
     <Compile Include="mediators\ObjectMediator.cs" />
     <Compile Include="models\impl\ObjectIDModel.cs" />
+    <Compile Include="models\impl\ObjectsModel.cs" />
+    <Compile Include="models\impl\ObjectTransformModel.cs" />
     <Compile Include="models\IObjectIDModel.cs" />
+    <Compile Include="models\IObjectsModel.cs" />
+    <Compile Include="models\IObjectTransformModel.cs" />
+    <Compile Include="ObjectsContext.cs" />
+    <Compile Include="ObjectsLoadableContextView.cs" />
+    <Compile Include="providers\IObjectIDProvider.cs" />
+    <Compile Include="providers\IObjectProvider.cs" />
+    <Compile Include="providers\IObjectTransformProvider.cs" />
     <Compile Include="Signals.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="views\ObjectChildView.cs" />
     <Compile Include="views\ObjectView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{c8bb6181-b847-4971-aca2-9edc0d21cabf}</Project>
+      <Name>common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

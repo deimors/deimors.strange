@@ -1,10 +1,8 @@
-﻿using UnityEngine;
-using System.Collections;
-
-using strange.extensions.mediation.impl;
+﻿using strange.extensions.mediation.impl;
+using UnityEngine;
 
 namespace deimors.strange.camera.views {
-	[RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Rigidbody2D))]
 	public class CameraFollowView : View {
 		public Transform FollowObject;
 
@@ -13,12 +11,13 @@ namespace deimors.strange.camera.views {
 
 		public float baseFollowVelocity = 0.5f;
 
-		private Rigidbody2D rigidbody;
+		private Rigidbody2D _rigidbody;
 
 		#region View implementation
 		protected override void Awake()
 		{
-			rigidbody = GetComponent<Rigidbody2D>();
+            base.Awake();
+			_rigidbody = GetComponent<Rigidbody2D>();
 		}
 		#endregion
 
@@ -42,7 +41,7 @@ namespace deimors.strange.camera.views {
 				newVelocity += (Vector2.right * xDiff).normalized * (baseFollowVelocity + (xAbsDiff - xFollowMax) * (xAbsDiff - xFollowMax));
 			}
 
-			rigidbody.velocity = newVelocity;
+			_rigidbody.velocity = newVelocity;
 		}
 		#endregion
 
