@@ -18,6 +18,8 @@ namespace deimors.strange.steering {
 
         public void BindSignals(IInjectionBinder injectionBinder) {
             injectionBinder.Bind<SetRotateTargetSignal>().ToSingleton().CrossContext();
+            injectionBinder.Bind<SetDirectedForceMagSignal>().ToSingleton().CrossContext();
+            injectionBinder.Bind<SetDirectedForceDirSignal>().ToSingleton().CrossContext();
         }
 
         public void BindViews(IMediationBinder mediationBinder) {
