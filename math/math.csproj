@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A93C14A8-52B9-4A4E-A601-2EE0AF0BBA2C}</ProjectGuid>
+    <ProjectGuid>{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>deimors.strange.proximity</RootNamespace>
-    <AssemblyName>deimors.strange.proximity</AssemblyName>
+    <RootNamespace>deimors.strange.math</RootNamespace>
+    <AssemblyName>deimors.strange.math</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
@@ -40,38 +40,24 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="StrangeIoC">
-      <HintPath>..\..\..\..\..\deimors\Documents\Unity Packages\strangeioc\StrangeIoC\scripts\strange\bin\Debug\StrangeIoC.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="commands\AddToProximityCommand.cs" />
-    <Compile Include="commands\RemoveFromProximityCommand.cs" />
-    <Compile Include="mediators\ProximityColliderMediator.cs" />
-    <Compile Include="models\impl\ObjectProximityModel.cs" />
-    <Compile Include="models\IObjectProximityModel.cs" />
+    <Compile Include="pid\impl\FloatPIDControl.cs" />
+    <Compile Include="pid\impl\PIDControl.cs" />
+    <Compile Include="pid\impl\Vector3PIDControl.cs" />
+    <Compile Include="pid\IPIDControl.cs" />
+    <Compile Include="pid\PIDControlVars.cs" />
+    <Compile Include="pid\PIDData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProximityContext.cs" />
-    <Compile Include="ProximityLoadableContextView.cs" />
-    <Compile Include="Signals.cs" />
-    <Compile Include="views\ProximityCollider2DView.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\common\common.csproj">
-      <Project>{c8bb6181-b847-4971-aca2-9edc0d21cabf}</Project>
-      <Name>common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\objects\objects.csproj">
-      <Project>{a650d675-c6bf-4847-9ff9-d1bd4dc5aafa}</Project>
-      <Name>objects</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if "$(ConfigurationName)" == "Swarm Tech Build" (

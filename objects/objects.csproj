@@ -30,6 +30,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Swarm Tech Build|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Swarm Tech Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="StrangeIoC">
       <HintPath>..\..\..\..\..\deimors\Documents\Unity Packages\strangeioc\StrangeIoC\scripts\strange\bin\Debug\StrangeIoC.dll</HintPath>
@@ -67,6 +76,12 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)" == "Swarm Tech Build" (
+    copy "$(TargetDir)\$(TargetName).dll" "C:\Users\Public\Documents\Unity Projects\Swarm Tech\Assets\Libraries\" /y
+    copy "$(TargetDir)\$(TargetName).pdb" "C:\Users\Public\Documents\Unity Projects\Swarm Tech\Assets\Libraries\" /y
+)</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

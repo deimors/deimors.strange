@@ -1,9 +1,8 @@
-﻿using strange.extensions.mediation.impl;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace deimors.strange.camera.views {
     [RequireComponent(typeof(Rigidbody2D))]
-	public class CameraFollowView : View {
+	public class CameraVelocityFollow : MonoBehaviour {
 		public Transform FollowObject;
 
 		public float yFollowMax = 1;
@@ -13,15 +12,12 @@ namespace deimors.strange.camera.views {
 
 		private Rigidbody2D _rigidbody;
 
-		#region View implementation
-		protected override void Awake()
+        #region Unity methods
+        void Awake()
 		{
-            base.Awake();
 			_rigidbody = GetComponent<Rigidbody2D>();
 		}
-		#endregion
 
-		#region Unity methods
 		void LateUpdate() {
 			Vector2 posDiff = FollowObject.position - transform.position;
 

@@ -11,28 +11,54 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "camera", "camera\camera.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proximity", "proximity\proximity.csproj", "{A93C14A8-52B9-4A4E-A601-2EE0AF0BBA2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "steering", "steering\steering.csproj", "{966EA90B-AA00-4840-9F37-EBA3D6BA5691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "math", "math\math.csproj", "{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Swarm Tech Build|Any CPU = Swarm Tech Build|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C8BB6181-B847-4971-ACA2-9EDC0D21CABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C8BB6181-B847-4971-ACA2-9EDC0D21CABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8BB6181-B847-4971-ACA2-9EDC0D21CABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8BB6181-B847-4971-ACA2-9EDC0D21CABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BB6181-B847-4971-ACA2-9EDC0D21CABF}.Swarm Tech Build|Any CPU.ActiveCfg = Swarm Tech Build|Any CPU
+		{C8BB6181-B847-4971-ACA2-9EDC0D21CABF}.Swarm Tech Build|Any CPU.Build.0 = Swarm Tech Build|Any CPU
 		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Swarm Tech Build|Any CPU.ActiveCfg = Swarm Tech Build|Any CPU
+		{A650D675-C6BF-4847-9FF9-D1BD4DC5AAFA}.Swarm Tech Build|Any CPU.Build.0 = Swarm Tech Build|Any CPU
 		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Swarm Tech Build|Any CPU.ActiveCfg = Swarm Tech Build|Any CPU
+		{A4D8D465-3777-4A86-8AFD-80BFC2D32690}.Swarm Tech Build|Any CPU.Build.0 = Swarm Tech Build|Any CPU
 		{A93C14A8-52B9-4A4E-A601-2EE0AF0BBA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A93C14A8-52B9-4A4E-A601-2EE0AF0BBA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A93C14A8-52B9-4A4E-A601-2EE0AF0BBA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A93C14A8-52B9-4A4E-A601-2EE0AF0BBA2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93C14A8-52B9-4A4E-A601-2EE0AF0BBA2C}.Swarm Tech Build|Any CPU.ActiveCfg = Swarm Tech Build|Any CPU
+		{A93C14A8-52B9-4A4E-A601-2EE0AF0BBA2C}.Swarm Tech Build|Any CPU.Build.0 = Swarm Tech Build|Any CPU
+		{966EA90B-AA00-4840-9F37-EBA3D6BA5691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{966EA90B-AA00-4840-9F37-EBA3D6BA5691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{966EA90B-AA00-4840-9F37-EBA3D6BA5691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{966EA90B-AA00-4840-9F37-EBA3D6BA5691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{966EA90B-AA00-4840-9F37-EBA3D6BA5691}.Swarm Tech Build|Any CPU.ActiveCfg = Swarm Tech Build|Any CPU
+		{966EA90B-AA00-4840-9F37-EBA3D6BA5691}.Swarm Tech Build|Any CPU.Build.0 = Swarm Tech Build|Any CPU
+		{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}.Swarm Tech Build|Any CPU.ActiveCfg = Swarm Tech Build|Any CPU
+		{70E9E3FA-4D2E-4B26-B324-EAC817B47B39}.Swarm Tech Build|Any CPU.Build.0 = Swarm Tech Build|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
