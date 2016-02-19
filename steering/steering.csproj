@@ -51,9 +51,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="mediators\DirectedConstantForce2DMediator.cs" />
+    <Compile Include="mediators\RotateTowardsForce2DMediator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signals.cs" />
+    <Compile Include="SteeringContext.cs" />
+    <Compile Include="SteeringContextMapping.cs" />
+    <Compile Include="SteeringLoadableContextView.cs" />
+    <Compile Include="views\DirectedConstantForce2DView.cs" />
     <Compile Include="views\RotateTowardsForce2DView.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{c8bb6181-b847-4971-aca2-9edc0d21cabf}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\math\math.csproj">
+      <Project>{70e9e3fa-4d2e-4b26-b324-eac817b47b39}</Project>
+      <Name>math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\objects\objects.csproj">
+      <Project>{a650d675-c6bf-4847-9ff9-d1bd4dc5aafa}</Project>
+      <Name>objects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if "$(ConfigurationName)" == "Swarm Tech Build" (

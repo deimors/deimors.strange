@@ -6,7 +6,7 @@ namespace deimors.strange.common.context {
 
 		private LoadableContextView[] ContextViews;
 
-		public void Awake() {
+		public void Start() {
 			BuildContextViews();
 
 			BuildContexts();

@@ -52,8 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="context\ContextLoader.cs" />
+    <Compile Include="context\IContextMapping.cs" />
     <Compile Include="context\LoadableContextView.cs" />
+    <Compile Include="context\MappedContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signals\IndexedSignal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

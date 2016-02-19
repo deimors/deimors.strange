@@ -60,6 +60,7 @@
     <Compile Include="models\IObjectsModel.cs" />
     <Compile Include="models\IObjectTransformModel.cs" />
     <Compile Include="ObjectsContext.cs" />
+    <Compile Include="ObjectsContextMapping.cs" />
     <Compile Include="ObjectsLoadableContextView.cs" />
     <Compile Include="providers\IObjectIDProvider.cs" />
     <Compile Include="providers\IObjectProvider.cs" />
